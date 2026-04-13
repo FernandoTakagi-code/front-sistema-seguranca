@@ -1,0 +1,130 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #7f8c8d;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+/* Container do Formulário e Login */
+table {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+td {
+    padding: 5px;
+}
+
+label {
+    font-weight: 600;
+    color: #34495e;
+    text-transform: capitalize;
+}
+
+/* Estilização dos Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #3498db;
+}
+
+/* Botões */
+input[type="button"], 
+button,
+.btn-menu {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+input[type="button"]:hover, 
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+#btnCancelar {
+    background-color: #e74c3c;
+}
+
+#btnCancelar:hover {
+    background-color: #c0392b;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tabela de Dados (DataTable) */
+.dataTables_wrapper {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 30px;
+}
+
+/* Estilo para os botões dentro da tabela */
+#edit {
+    background-color: #f1c40f;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#excluir {
+    background-color: #e74c3c;
+    padding: 5px 10px;
+    font-size: 12px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestão de Usuários - Sistema Seguro</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+</head>
+<body>
+
+    <h1>Gestão de Usuários</h1>
+
+    <div class="formulario">
+        <table style="width: 800px;">
+            <tr>
+                <td><label for="txtId">ID:</label></td>
+                <td><input type="text" id="txtId" disabled placeholder="Automático" /></td>
+            </tr>
+            <tr>
+                <td><label for="txtName">Nome:</label></td>
+                <td><input type="text" id="txtName" required /></td>
+            </tr>
+            <tr>
+                <td><label for="txtEmail">E-mail:</label></td>
+                <td><input type="email" id="txtEmail" required /></td>
+            </tr>
+            <tr>
+                <td><label for="txtSenha">Senha:</label></td>
+                <td><input type="password" id="txtSenha" placeholder="Digite a nova senha" /></td>
+            </tr>
+            <tr>
+                <td><label for="chkAdmin">Administrador:</label></td>
+                <td><input type="checkbox" id="chkAdmin" /></td>
+            </tr>
+            <tr>
+                <td><label for="ddlProfile">Perfil de Acesso:</label></td>
+                <td>
+                    <select id="ddlProfile">
+                        <option value="">Selecione um perfil...</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding-top: 20px;">
+                    <button type="button" id="btnGravar">Gravar Dados</button>
+                    <button type="button" id="btnCancelar">Limpar Formulário</button>
+                    <a href="menu.html" style="margin-left: 20px;">Voltar ao Menu</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br><hr><br>
+
+    <h2>Usuários Cadastrados</h2>
+    <div style="width: 90%;">
+        <table id="tbUsers" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+
+    <script src="../js/user.js"></script>
+
+</body>
+</html>

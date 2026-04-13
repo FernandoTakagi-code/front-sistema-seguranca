@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login - Sistema de Gestão Seguro</title>
+        <link rel="stylesheet" type="text/css" href="./estilo.css" />
+        
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+    </head>
+
+    <body>
+        <div class="login-container">
+            <h1>Seja bem-vindo</h1>
+            <h2>Acessar Sistema</h2>
+            
+            <table>
+                <tr>
+                    <td><label for="txtEmail">E-mail:</label> </td>
+                    <td><input id="txtEmail" type="email" placeholder="seu@email.com" required /> </td>
+                </tr>
+                <tr>
+                    <td><label for="txtSenha">Senha:</label> </td>
+                    <td><input id="txtSenha" type="password" placeholder="******" required /> </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding-top: 15px;">
+                        <input id="btnLogin" type="button" value="Entrar" /> 
+                        <input id="btnCancelar" type="button" value="Limpar" /> 
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding-top: 15px; text-align: center;">
+                        <a href="forgot-password.html">Esqueci minha senha</a> |
+                        <a href="/src/web/user/new.html">Criar nova conta</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <script src="src/web/js/index.js"></script>
+    </body>
+</html>
